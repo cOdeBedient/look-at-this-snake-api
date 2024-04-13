@@ -40,6 +40,49 @@ app.locals.noSnakeZones = [ { "id": 1, "region": "Ireland", "livability": "High"
 { id: '31', region: "Cayman Islands", livability: "High", costOfLiving: "High", hasSnakes: false, description: "The Cayman Islands are a British Overseas Territory known for their stunning beaches, crystal-clear waters, and world-class diving sites. Snakes are not native to the Cayman Islands, making them a safe and luxurious destination for travelers." }
 ]
 
+app.locals.snakes = [
+  { name: "Corn Snake", isVenemous: false, isAggressive: false },
+  { name: "Ball Python", isVenemous: false, isAggressive: false },
+  { name: "King Snake", isVenemous: false, isAggressive: true },
+  { name: "Garter Snake", isVenemous: false, isAggressive: true },
+  { name: "Milk Snake", isVenemous: false, isAggressive: false },
+  { name: "Rosy Boa", isVenemous: false, isAggressive: true },
+  { name: "Hognose Snake", isVenemous: false, isAggressive: true },
+  { name: "Rat Snake", isVenemous: false, isAggressive: false },
+  { name: "Pine Snake", isVenemous: false, isAggressive: true },
+  { name: "Gopher Snake", isVenemous: false, isAggressive: false },
+  { name: "Black Rat Snake", isVenemous: false, isAggressive: true },
+  { name: "Blue Racer", isVenemous: false, isAggressive: false },
+  { name: "Bull Snake", isVenemous: false, isAggressive: true },
+  { name: "Coachwhip Snake", isVenemous: false, isAggressive: false },
+  { name: "Indigo Snake", isVenemous: false, isAggressive: true },
+  { name: "Cape Gopher Snake", isVenemous: false, isAggressive: false },
+  { name: "Eastern Hognose Snake", isVenemous: false, isAggressive: true },
+  { name: "Longnose Snake", isVenemous: false, isAggressive: false },
+  { name: "Patch-nosed Snake", isVenemous: false, isAggressive: true },
+  { name: "Plains Hognose Snake", isVenemous: false, isAggressive: false },
+  { name: "Copperhead", isVenemous: true, isAggressive: false },
+  { name: "Cottonmouth", isVenemous: true, isAggressive: true },
+  { name: "Rattlesnake", isVenemous: true, isAggressive: false },
+  { name: "Cobra", isVenemous: true, isAggressive: true },
+  { name: "Taipan", isVenemous: true, isAggressive: false },
+  { name: "Black Mamba", isVenemous: true, isAggressive: true },
+  { name: "Inland Taipan", isVenemous: true, isAggressive: false },
+  { name: "Russell's Viper", isVenemous: true, isAggressive: true },
+  { name: "Saw-scaled Viper", isVenemous: true, isAggressive: false },
+  { name: "Boomslang", isVenemous: true, isAggressive: true },
+  { name: "King Cobra", isVenemous: true, isAggressive: false },
+  { name: "Gaboon Viper", isVenemous: true, isAggressive: true },
+  { name: "Fer-de-lance", isVenemous: true, isAggressive: false },
+  { name: "Tiger Snake", isVenemous: true, isAggressive: true },
+  { name: "Death Adder", isVenemous: true, isAggressive: false },
+  { name: "Puff Adder", isVenemous: true, isAggressive: true },
+  { name: "Coral Snake", isVenemous: true, isAggressive: false },
+  { name: "Fierce Snake", isVenemous: true, isAggressive: true },
+  { name: "Krait", isVenemous: true, isAggressive: false },
+  { name: "Black-Necked Spitting Cobra", isVenemous: true, isAggressive: true }
+];
+
 
 app.get('/', (request, response) => {
     response.send('No Snake Zones!');
@@ -47,9 +90,15 @@ app.get('/', (request, response) => {
 
 app.get('/api/v1/noSnakeZones', (request, response) => {
     const noSnakeZones = app.locals.noSnakeZones
-    console.log("nsz", noSnakeZones)
 
     response.json({noSnakeZones})
+})
+
+app.get('/api/v1/snakes', (request, response) => {
+  const snakes = app.locals.snakes
+ 
+
+  response.json({snakes})
 })
 
 // app.get("/api/v1/noSnakeZones/:id", (request, response) => {
