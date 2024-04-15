@@ -43,7 +43,7 @@ app.locals.noSnakeZones = [ { "id": 1, "region": "Ireland", "livability": "High"
 app.locals.snakes = [
   { name: "Corn Snake", isVenemous: false, isAggressive: false, image: "https://www.thesprucepets.com/thmb/n0QvLg46o27XE8PjQSVtR6m7ZIo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/corn-snake-from-the-lower-florida-keys-530475947-588124bc5f9b58bdb3ec9f93.jpg" },
   { name: "Ball Python", isVenemous: false, isAggressive: false, image: "https://kinovareptiles.com/wp-content/uploads/2019/04/2016-10-24-15.17.17_2-1024x887.jpg" },
-  { name: "King Snake", isVenemous: false, isAggressive: true, image: "https://lh4.googleusercontent.com/proxy/M0NWrXSvAAeVEgJwjB2KYIEmlAafviW4usNdQK_eLyhBEePXeDjUyCxAEyP3HqE7Jdt1ZQLKcDLhWNU5lGQPCic50XUIMaN4mAa0SnT7ltL591rC4g" },
+  { name: "King Snake", isVenemous: false, isAggressive: true, image: "https://msherps.com/wp-content/uploads/2021/08/Lhol-1-scaled.jpg" },
   { name: "Garter Snake", isVenemous: false, isAggressive: true, image: "https://msherps.com/wp-content/uploads/2021/08/IMG_4769-edited-scaled.jpg" },
   { name: "Milk Snake", isVenemous: false, isAggressive: false, images: "https://facts.net/wp-content/uploads/2023/10/20-astonishing-facts-about-milk-snake-1696146278.jpg" },
   { name: "Rosy Boa", isVenemous: false, isAggressive: true, images: "https://inaturalist-open-data.s3.amazonaws.com/photos/36509403/original.jpeg" },
