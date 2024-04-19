@@ -83,6 +83,9 @@ app.locals.snakes = [
   { name: "Black-Necked Spitting Cobra", isVenemous: true, isAggressive: true, image: "https://facts.net/wp-content/uploads/2023/10/15-intriguing-facts-about-black-spitting-cobra-1696206781.jpg" }
 ];
 
+app.listen(app.get('port'), () => {
+  console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
+});
 
 app.get('/', (request, response) => {
     response.send('No Snake Zones!');
@@ -175,9 +178,7 @@ app.get('/api/v1/snakes', (request, response) => {
 //     }
 // })
 
-app.listen(app.get('port'), () => {
-  console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
-});
+
 
 
  
