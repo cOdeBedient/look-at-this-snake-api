@@ -41,7 +41,8 @@ app.locals.noSnakeZones = [
 ]
 
 app.locals.snakes = [
-  { name: "Corn Snake", isVenemous: false, isAggressive: false, image: "https://www.thesprucepets.com/thmb/n0QvLg46o27XE8PjQSVtR6m7ZIo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/corn-snake-from-the-lower-florida-keys-530475947-588124bc5f9b58bdb3ec9f93.jpg" },
+  // { name: "Corn Snake", isVenemous: false, isAggressive: false, image: "https://www.thesprucepets.com/thmb/n0QvLg46o27XE8PjQSVtR6m7ZIo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/corn-snake-from-the-lower-florida-keys-530475947-588124bc5f9b58bdb3ec9f93.jpg" },
+  { name: "Corn Snake", isVenemous: false, isAggressive: false, image: "John Smith" },
   { name: "Ball Python", isVenemous: false, isAggressive: false, image: "https://kinovareptiles.com/wp-content/uploads/2019/04/2016-10-24-15.17.17_2-1024x887.jpg" },
   { name: "King Snake", isVenemous: false, isAggressive: true, image: "https://msherps.com/wp-content/uploads/2021/08/Lhol-1-scaled.jpg" },
   { name: "Garter Snake", isVenemous: false, isAggressive: true, image: "https://msherps.com/wp-content/uploads/2021/08/IMG_4769-edited-scaled.jpg" },
