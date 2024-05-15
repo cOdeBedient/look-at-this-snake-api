@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-// const fs = require('fs')
 app.use(express.json())
 const cors = require('cors');
 app.use(cors());
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 8000);
 app.locals.title = 'NoSnakeZones'
 app.locals.noSnakeZones = [
   { "id": 1, "region": "Ireland", "livability": "High", "costOfLiving": "Moderate", "hasSnakes": false, "description": "Ireland is famous for its lush green landscapes, rich cultural heritage, and friendly people. Snakes have never been native to Ireland, adding to its charm." },
